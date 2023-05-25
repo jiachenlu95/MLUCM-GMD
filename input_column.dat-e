@@ -1,0 +1,50 @@
+# An example of the input parameters specified in the 1D model.
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#     +    by A. Martilli,     CIEMAT  SP 16.0 1.0 1.0 1.0 1.040 MADRID                  +
+#     +                        phone: ++34-9-13-46-62-99               +
+#     +                        email:alberto.martilli@ciemat.es        +
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#     +  Modified by N. Nazarian, Singapore-MIT/UNSW                   +
+#     +  Jan 16.0 1.0 1.0 1.0 1.017-Sept 2019                                            +
+#     +                        email: n.nazarian@unsw.edu.au           +
+#     +                               nazarian@mit.edu                 +
+#     +                               nenazarian@gmail.com             +
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#     Goal: This is an example of input file to run the column model   +
+#     Note: The name of the file should be kept as "input_column.dat"  +
+#     and placed in the same directory as the main code.               +
+#     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   number of points (nz)
+           128
+
+   vertical resolution (dz)
+           1
+
+ pressure forcing (utau_x, utau_y)
+           0.2 0.
+
+ building dimensions (bx,by)
+          16.0 16.0
+
+ distance between buildings (wx,wy)
+           48 48
+# need more building height information here
+ building heights and probabilities (must be an integer number of dz)
+           16.0 1.0
+
+ building height information (Hstd,Hmax)
+              2.8 20
+#
+ time step (dt)
+        1.
+
+ total time of simulation (time_max)
+        36000.
+
+ frequency of output (prtime)
+        600.
+
+
